@@ -1,0 +1,19 @@
+{
+  "name": "business-management-app",
+  "version": "1.0.0",
+  "description": "App to manage business sales, purchase, clients, employees.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ram Dhan Ashok Kumar",
+  "license": "GNU",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

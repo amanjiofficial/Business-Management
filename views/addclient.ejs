@@ -1,0 +1,47 @@
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <h1 class="text-center mb-3">
+        ADD CLIENT
+      </h1>
+      <% include ./partials/messages %>
+      <form action="/clients/addclient" method="POST">
+      <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="name" id="name" name="name" class="form-control" placeholder="Enter Name" value="<%= typeof name != 'undefined' ? name : '' %>"/>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email" value="<%= typeof email != 'undefined' ? email : '' %>"/>
+        </div>
+        <div class="form-group">
+          <label for="address">Address *</label>
+          <input type="string" id="address" name="address" class="form-control" placeholder="Enter Address" value="<%= typeof address != 'undefined' ? address : '' %>"/>
+        </div>
+        <div class="form-group">
+          <label for="phnumber">Contact Number *</label>
+          <input type="number" id="phnumber" name="phnumber" class="form-control" placeholder="Enter Contact Number" value="<%= typeof phnumber != 'undefined' ? phnumber : '' %>"/>
+        </div>
+        <div class="form-group">
+          <label for="bal_amount">Total Balance Amount</label>
+          <input type="number" id="bal_amount" name="bal_amount" class="form-control" placeholder="Enter Total Balance Amount" value="<%= typeof bal_amount != 'undefined' ? bal_amount : '' %>"/>
+        </div>
+        <div class="form-group">
+          <label for="def_site_address">Default Site Address *</label>
+          <input type="string" id="def_site_address" name="def_site_address" class="form-control" placeholder="Enter Default Site Address" value="<%= typeof def_site_address != 'undefined' ? def_site_address : '' %>"/>
+        </div>
+        <div class="form-group">
+          <label for="def_site_bal_amount">Default Site Balance Amount *</label>
+          <input type="number" id="def_site_bal_amount" name="def_site_bal_amount" class="form-control" placeholder="Enter Default Site Total Balance Amount" value="<%= typeof def_site_bal_amount != 'undefined' ? def_site_bal_amount : '' %>"/>
+        </div>
+        <div class="form-group">
+          <label for="reference">Reference </label>
+          <input type="string" id="reference" name="reference" class="form-control" placeholder="Reference Name" value="<%= typeof reference != 'undefined' ? reference : '' %>"/>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          Add Client
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
